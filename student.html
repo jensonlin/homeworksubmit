@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生界面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<div class="public-header">
+    <div class="public-container clearfloat">
+        <div class="header-logo">
+            <a href="https://www.nju.edu.cn/"></a>
+        </div>
+        <ul class="header-nav clearfloat">
+            <li class="item"><a href="log.html">退出登录</a></li>     <!-- 登录界面的html文件 -->
+            <li class="item"><a href="">修改密码</a></li>     <!-- 修改密码的html文件 -->
+            <li class="item"><a href="">我的主页</a></li>     <!-- 我的主页html文件 -->
+        </ul>
+    </div>
+</div>
+<div class="public-container public-border"></div>
+<div class="public-container index-list">
+    <div class="left-list clearfloat">
+        <ul class="list-nav">
+            <li class="list-item"><a href="">我的课程</a></li>
+            <li class="list-item"><a href="">作业</a></li>
+            <li class="list-item"><a href="">课件（待议）</a></li>    <!-- 是否考虑添加课件下载功能，如果添加，则教师需增加课件上传功能 -->
+        </ul>
+    </div>
+    <div class="right-list">                                      <!-- left-list和right-list是并列关系，不能在left中嵌入right -->
+        <div class="right-form">
+            <div>课程清单</div>
+            <div class="course-list">待修改</div>                <!-- 此处为表单操作，添加减少课程-->
+            <div class="course-operate"></div>      <!-- 后期修改，或可删除减少此功能-->
+        </div>
+        <div class="right-form">
+            <div>作业</div>
+            <div class="course-list">
+                <form action="">
+                    <input type="text" style="color:#000;"  oncopy="document.selection.empty()" onpaste="return false" />
+                </form>
+            </div>                <!-- 此处为表单操作，添加减少课程-->
+            <div class="course-operate">
+                <button id="btn1">保存</button>
+                <button id="btn2">提交</button>
+            </div>      <!-- 后期修改，或可删除减少此功能-->
+        </div>
+    </div>
+</div>
+<div class="public-footer">
+    <div class="public-container">
+        <div class="footer-col"><p>仙林校区<br>南京栖霞区仙林大道163号<br><a href="tel:(86)-25-89683186">(86)-25-89683186</a>210023</p>
+        </div>
+        <div class="footer-col"><p>鼓楼校区<br>南京鼓楼区汉口路22号<br><a href="tel:(86)-25-83593186">(86)-25-83593186</a>210093 </p>
+        </div>
+        <div class="footer-col"><p>友情链接<br><a href="https://www.nju.edu.cn/">校园主页</a><a href="https://mail.nju.edu.cn/">邮箱系统</a><a
+                href="http://news.nju.edu.cn/">南大新闻</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
